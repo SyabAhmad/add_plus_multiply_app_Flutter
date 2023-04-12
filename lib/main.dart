@@ -34,18 +34,22 @@ class myAppState extends State<MyApp>{
         ),
         body: Column(
           children: [
+            SizedBox(height: 50.0,),
             TextField(
               controller: value1,
               decoration: InputDecoration(
-                label: Text("First Value"),
+                label: Text("First Value",),
+
               ),
             ),
+            SizedBox(height: 50.0,),
             TextField(
               controller: value2,
               decoration: InputDecoration(
-                label: Text("Second Value")
+                label: Text("Second Value"),
               ),
             ),
+            SizedBox(height: 50.0,),
             ElevatedButton(
                 onPressed: () {
                   addThemUp();
@@ -53,6 +57,7 @@ class myAppState extends State<MyApp>{
     },
                 child: Text("Add them up"),
                 ),
+            SizedBox(height: 50.0,),
             ElevatedButton(
               onPressed: () {
                 multiply();
@@ -60,8 +65,9 @@ class myAppState extends State<MyApp>{
               },
               child: Text("Multiply them"),
             ),
-
+            SizedBox(height: 50.0,),
             Text("After Addition : $sum"),
+            SizedBox(height: 50.0,),
             Text("After Multiplication : $multi"),
           ],
         ),
