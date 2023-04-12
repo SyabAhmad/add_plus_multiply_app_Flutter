@@ -49,20 +49,20 @@ class myAppState extends State<MyApp>{
             ElevatedButton(
                 onPressed: () {
                   addThemUp();
-                  setState() {}
+                  setState(() {});
     },
                 child: Text("Add them up"),
                 ),
             ElevatedButton(
               onPressed: () {
                 multiply();
-                setState() {}
+                setState(() {});
               },
-              child: Text("Add them up"),
+              child: Text("Multiply them"),
             ),
 
             Text("After Addition : $sum"),
-            Text("After Multiplication : $multiply"),
+            Text("After Multiplication : $multi"),
           ],
         ),
       ),
